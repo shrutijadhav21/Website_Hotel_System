@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hotel website</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<link rel="stylesheet" href="css/bootstrap.min.css">    
+<link rel="stylesheet" href="css/style.css">    
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/custom.css">
+<script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Start header -->
+  <header class="top-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbars-rs-food">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Restorent</a></li>
+            <li class="nav-item"><a class="nav-link" href="room.html">Room</a></li>
+            <li class="nav-item"><a class="nav-link" href="reception.html">Reception</a></li>
+           </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End header -->
+  <br><br><br><br><br>
+  <div class="heading-title text-center">
+   <h2>Admin login</h2>
+  </div>
+  <div class="wrapper">
+  <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab">
+</div>
+</div>
+<div class="form-inner">
+<!----log in form---------------->
+          <form method="post" action="login.php" class="login">
+            <div class="field">
+               Username : <input type="text" name="username" placeholder="Enter Email Address" required>
+            </div><br>         
+            <div class="field">
+              Password: <input type="password" name="password" placeholder="Enter Password" required>
+            </div><br>
+            <div class="pass-link">
+              <a href="#"><br><br>Forgot password?</a></div>
+               <div class="field btn">
+               <div class="btn-layer">
+               </div>
+              <input type="submit" value="Submit">
+             </div>
+             <div class="signup-link">
+             Not a member? <a href="">Registration</a><br>
+             <a href="index.html"> Back to Website</a>
+            </div>
+       </form>
+       <!----end of log in form---------------->
+
+<!---sign up form---------------->
+<form method="post" action="signup.php" class="signup">
+          <div class="field">
+              name : <input type="text" name="name" placeholder="Enter Name" required>
+          </div><br>
+          <div class="field">
+              Email : <input type="text" name="email" placeholder="Enter Email" required>
+            </div><br>
+            <div class="field">
+              Password: <input type="text" name="password" placeholder="Enter Password" required>
+            </div><br>
+            
+           <div class="field btn">
+              <div class="btn-layer">
+              </div>
+              <input type="submit" value="Signup">
+               </div>
+</form>
+</div>
+</div>
+</div>
+<script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+    </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.superslides.min.js"></script>
+  <script src="js/images-loded.min.js"></script>
+  <script src="js/isotope.min.js"></script>
+  <script src="js/baguetteBox.min.js"></script>
+  <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+     <script type="js/javascript"></script>
+   </body>
+</html>

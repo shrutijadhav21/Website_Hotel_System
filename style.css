@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url(animate.css);
+@import url(font-awesome.min.css);
+@import url(superslides.css);
+@import url(baguetteBox.min.css);
+
+
+body {
+      font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.80857;
+}
+
+/*----------nav**********/
+.top-navbar{
+	position: relative;
+}
+.top-navbar .navbar{
+	padding: 15px 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+.top-navbar .navbar{
+  padding: 10px 0px;
+  }
+
+.top-navbar .navbar-light .navbar-nav .nav-link{
+	color: orange;
+	font-size: 16px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	text-transform: uppercase;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
+	background: orange;
+	color: white;
+}
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
+	background: orange;
+	color: white;
+	border-radius: 4px;
+}
+.navbar-expand-lg .navbar-nav {
+	border: none;
+	border-radius: 0px;
+	padding: 10px;
+}
+.navbar-expand-lg .navbar-nav  {
+	padding: 10px 10px;
+	text-transform: uppercase;
+}
+
+.navbar-expand-lg .navbar-nav :hover{
+	background: orange;
+	color: white;
+}
+.navbar-light .navbar-toggler:hover{
+	background: orange;
+}
+.bg-light{
+  color: white;
+}
+/************end of nav**********/
+
+/*-----------------slider*************/
+.cover-slides{
+	height: 100vh;
+}
+.slides-navigation a {
+	background: orange;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    font-size: 20px;
+    display: block;
+    color: white;
+	border-radius: 4px;
+	text-align: center;
+    transition: all .3s ease-in-out;
+}
+.slides-navigation a i{
+	font-size: 40px;
+}
+.slides-navigation a:hover {
+	background: pink;
+}
+.cover-slides .container{
+	height: 100%;
+	position: relative;
+
+}
+.cover-slides .container  {
+align-items: center;
+}
+.cover-slides .container {
+    height: 100%;
+}
+.cover-slides .text-left{
+  align-items: center;
+}
+
+.overlay-background {
+    background: grey;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+	opacity: 0.5;
+}
+
+
+/*********end of slider**********/
+/**********hero section*********/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+.main .title{
+    color: black;
+    font-size: 50px;
+}
+.main-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background: orange;
+    color:white;
+    border: 2px solid orange;
+    margin-top:10px;
+  
+}
+.main-button:hover{
+    background: white;
+    color: orange;
+    border: none;
+    }
+.pulsate{
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count:infinite ;
+    opacity: .3;
+    color: black;
+}
+@-webkit-keyframes pulsate{
+    0% {
+        opacity: .3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .3;
+    }
+
+}
+/***********end of hero*************/
+
+/*-----------about**************/
+#about{
+    padding: 40px;
+}
+.about{
+    margin: 30px 0;
+    display: flex;
+}
+.about-icon .fas{
+    font-size: 60px;
+    color: orange;
+    margin-right: 20px;
+}
+.about-subtitle{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 25px;
+}
+.about-icon:hover .fas,
+.about-subtitle:hover{
+ transition: transform 2s ease, color 2s ease;
+ transform: translateY(-10px);
+ 
+}
+
+
+/************ end about section******/
+
+
+/*==========Social Icons====*/
+#social-icons{
+ height: 150px;
+   background:white;
+    text-align: center;
+  padding: 50px 0 50px 0;
+}
+#social-icons a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 40px;
+    border-radius:5px;
+    transition: transform 2s ease, color 2s ease;
+}
+#social-icons a:hover{
+    transform: translateY(-20px);
+}
+.facebook{
+    color: #3b5998;
+}
+.twitter{
+  color:  #38A1F3;
+}
+.instagram{
+ color:   #e1306c;
+}
+.plus{
+    color:#db4a39;
+}
+/********social icon*********/
+
+/*******number section*****/
+.number{
+  background:
+     url('C:/xampp/htdocs/test/images/chery.jpg') center/cover fixed no-repeat;
+    text-align: center;
+    padding: 60px 0;
+    color:#fff;
+ }
+
+.number:hover{
+    color: orange;
+}
+.number .fas{
+    font-size: 60px;
+    margin: 20px 0;
+}
+.number h3{
+    text-transform: uppercase;
+}
+@media screen {
+    #numbers {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/*************end of number section**/
+
+
+/*-------gallery********/
+.gallery-box{
+	padding: 70px 0px;
+}
+.tz-gallery{
+	margin-top: 30px;
+}
+.tz-gallery .lightbox img {
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.tz-gallery .lightbox img:hover {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+.tz-gallery .lightbox{
+	border: 3px solid black;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+#tz-gallery .col-md-4 {
+  padding-bottom: 18px;
+}
+/*******************end gallery section**********/
+
+/***************contact section***********/
+.center{
+  text-align: center;
+  padding: 30px;
+}
+.contact {
+  background: url(C:/xampp/htdocs/test/images/r.jpg) ;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.contact h2 {
+  padding-bottom: 14px;
+}
+.contact h4 {
+  padding-top: 8px;
+}
+.contact p {
+  color: white;
+}
+.contact span {
+  font-weight: bold;
+  padding-left: 24px;
+}
+.contact .ph, .contact .address {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.contact .fa {
+  font-size: 12px;
+  padding-right: 10px;
+}
+.contact .col-md-4{
+  margin-bottom: 15px;
+}  
+
+/* social icon */
+.social-icon {
+  padding: 0;
+}
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+.social-icon li a {
+  background: #f0f0f0;/*light grey*/
+  border-radius: 50%;
+  color: #5C5C5C;
+  font-size: 16px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  margin-top: 12px;
+  margin-right: 16px;
+  top: 0;
+  position: relative;
+  padding: 0;
+}
+.social-icon li a:hover {
+  background: #F6D76B;
+  top: 5px;
+}
+/*************** end contact section***********/
+
+/*************** subscribe*********************/
+#subscribe {
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),
+   url(C:/xampp/htdocs/test/images/bg.jpg);
+   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px;
+}
+#subscribe h4{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  align-items: center;
+}
+#subscribe .justify-content-center{
+  text-align: center;
+}
+
+
+
+/*************** END subscribe now **********************/
+/*******************start reservation*****************/
+section#book-table {
+    padding: 100px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+section#book-table .left-image img {
+    width: 70%;
+    height: 500px;
+    overflow: hidden;
+}
+.row{
+  padding: 20px;
+}
+.right-info {
+    height: 380px;
+    background-color: #fff;
+    margin-left: -30px;
+    padding: 30px;
+}
+.right-info input {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #9a9a9a;
+}
+.right-info button {
+    width: 100%;
+    display: inline-block;
+    background-color: orange;
+    color: #fff!important;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+/*******************end reservation*****************/
+/*--------------------------footer------------------*/
+.copyright{
+      padding: 30px 0;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    background-color:black;
+   
+     padding: 30px 0;
+}
+/*----------------end of footer------------------*/
+
+/*-----------back to top------------------*/
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 52px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: orange;
+    color: #ffffff;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+	  font-size: 30px;
+}
+/*****end back to top*/
+/******************************************************************************************************************************************
+**********
+
+/*********service************/
+#menu h4 {
+  line-height: 1.5;
+}
+
+#menu .col-md-6 {
+  padding-bottom: 30px;
+}
+/********* END OF MENU service************/
+#mu-map h2{
+  text-align: center;
+  padding: 30px;
+
+}
